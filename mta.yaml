@@ -31,9 +31,10 @@ modules:
 
   - name: risk-management-db-deployer
     type: hdb
-    path: gen/db
+    path: gen/db 
     parameters:
       buildpack: nodejs_buildpack
+      
     requires:
       - name: risk-management-db
       - name: risk-management-xsuaa # added after please remove if you enconter errors
